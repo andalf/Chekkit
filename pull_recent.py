@@ -3,7 +3,7 @@ import pp
 
 import connect_to_reddit
 
-reddit = connect_to_reddit.connect()
+reddit = connect_to_reddit.connect('Chekkit')
 
 #lets user choose subreddit
 subReddit = input("What Subreddit would you like to use?")
