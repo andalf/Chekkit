@@ -15,3 +15,10 @@ def which_subreddit():
 
     return sub_reddit
 
+def change_limitnumber():
+    #lets user choose the amount shown
+    limit_number = input("How many would you like to see?")
+    limit_number = int(limit_number)
+
+    return limit_number
+
