@@ -6,7 +6,7 @@ import connect_to_reddit
 reddit = connect_to_reddit.connect('Chekkit')
 
 #lets user choose subreddit
-subReddit = input("What Subreddit would you like to use?")
+subReddit = connect_to_reddit.which_subreddit()
 
 # get 5 most recent from the subReddit 'opensource'
 submissions = reddit.get_subreddit(subReddit).get_hot(limit=5)
