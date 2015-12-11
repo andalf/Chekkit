@@ -3,6 +3,9 @@ import pp
 
 import connect_to_reddit
 
+import webbrowser
+
+
 reddit = connect_to_reddit.connect('Chekkit')
 
 #lets user choose subreddit
@@ -13,3 +16,5 @@ submissions = reddit.get_subreddit(subReddit).get_hot(limit=connect_to_reddit.ch
 
 # print out the output
 pp([str(x) for x in submissions])
+
+
