@@ -3,8 +3,6 @@ import pp
 
 import connect_to_reddit
 
-import webbrowser
-
 
 reddit = connect_to_reddit.connect('Chekkit')
 
