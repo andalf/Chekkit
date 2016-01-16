@@ -25,3 +25,10 @@ def account_login():
     password = input("What is your reddit password?")
     r.login(username, password)
 
+
+def key_words():
+    user_keywords = input("What keywords would you like to look for? (separate keywords with comma followed by a space)")
+    keywords = user_keywords.split(", ", 10)
+    keywords = [x.strip() for x in keywords ]
+
+    return keywords
